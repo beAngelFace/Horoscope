@@ -1,0 +1,16 @@
+/* index.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+;
+  background-image: url('https://bogatyr.club/uploads/posts/2023-03/1679425799_bogatyr-club-p-zvezdnoe-nebo-s-lunoi-foni-vkontakte-36.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+
+

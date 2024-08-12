@@ -1,0 +1,97 @@
+/* AufReg.css */
+
+/* Общие стили для контейнера */
+.registrationForm, .auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: radial-gradient(#1b2735, #090a0f);
+    padding: 20px;
+  }
+  
+  /* Стили формы */
+  .registration, .auth {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid #00bfff;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.8), 0 0 30px rgba(0, 191, 255, 0.6);
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInAndScale 1s forwards;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box; /* Обеспечивает, что padding и border включены в ширину элемента */
+  }
+  
+  /* Заголовки */
+  .registrationTitle, .authTitle {
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(0, 191, 255, 0.8), 0 0 20px rgba(0, 191, 255, 0.6);
+  }
+  
+  /* Поля ввода */
+  .registration input, .auth input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #1c1c1c;
+    border: 2px solid #00bfff;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    box-shadow: inset 0 0 10px rgba(0, 191, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box; /* Обеспечивает, что padding и border включены в ширину элемента */
+  }
+  
+  .registration input:focus, .auth input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.8), 0 0 15px rgba(0, 191, 255, 0.6);
+  }
+  
+  /* Кнопка отправки */
+  .button-3d, .auth button {
+    width: 100%;
+    padding: 15px;
+    background-color: #000000;
+    border: 2px solid #00bfff;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box; /* Обеспечивает, что padding и border включены в ширину элемента */
+  }
+  
+  .button-3d:hover, .auth button:hover {
+    color: #00bfff;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.8), 0 0 15px rgba(0, 191, 255, 0.6);
+  }
+  
+  /* Ошибки */
+  .registration span p, .auth span p {
+    color: #ffcccc;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Анимация плавного появления формы */
+  @keyframes fadeInAndScale {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

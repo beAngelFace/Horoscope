@@ -1,0 +1,85 @@
+body {
+    background-color: #0a0a0a; /* Темный фон */
+    color: #f0f0f0; /* Легкий контраст текста */
+    font-family: 'Roboto', sans-serif; /* Современный шрифт */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #00bcd4; /* Яркий акцентный цвет (голубой) */
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.7); /* Эффект свечения */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #1a1a1a;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    text-align: center;
+    border: 1px solid #00bcd4; /* Контур акцентного цвета (голубой) */
+}
+
+li:hover {
+    background-color: #00bcd4; /* Голубой при наведении */
+    color: #0a0a0a;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
+}
+
+button {
+    background-color: #00bcd4; /* Голубой */
+    color: #0a0a0a;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0097a7; /* Темнее голубой при наведении */
+}
+
+p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.group-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.group-container img {
+    max-width: 300px; /* Увеличиваем размер изображения */
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.group-container div {
+    max-width: 50%; /* Уменьшаем, чтобы разместить крупное изображение */
+}

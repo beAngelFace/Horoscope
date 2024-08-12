@@ -1,0 +1,64 @@
+/* HoroscopePage.css */
+
+/* Общие стили для страницы */
+.horoscope-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: radial-gradient(#1b2735, #090a0f);
+    padding: 20px;
+  }
+  
+  /* Стили контейнера с предсказанием */
+  .horoscope-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid #00bfff;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.8), 0 0 30px rgba(0, 191, 255, 0.6);
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInAndScale 1s forwards;
+  }
+  
+  /* Заголовок предсказания */
+  .horoscope-content h2 {
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(0, 191, 255, 0.8), 0 0 20px rgba(0, 191, 255, 0.6);
+  }
+  
+  /* Стили для параграфов */
+  .horoscope-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+  }
+  
+  /* Стили для выделенных элементов */
+  .horoscope-content strong {
+    color: #00bfff; /* Яркий акцентный цвет */
+  }
+  
+  /* Анимация плавного появления формы */
+  @keyframes fadeInAndScale {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
